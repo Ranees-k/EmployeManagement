@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="/addemployenew.css">
+</head>
+
+<body class="body">
+    <section class="container">
+        <div class="div1" style="padding: 20px;">
+            <form class="form" action="/searchemploye" method="get" >
+                <input type="hidden" name="id" value="<%= row.id %>">
+                <input type="hidden" name="name" value="<%= row.name %>">
+                <div class="content">
+                    <label style="display: block; "><b>Id: <%= row.id %></b></label>
+                    <input type="hidden" value="<%= row.id%>">
+                </div>
+                <div class="content">
+                    <label style="display: block; "><b>Name: <%= row.name%></b></label>
+                    
+                </div>
+                <div class="content">
+                    <label style="display: block; "><b>Phone: <%=row.phone%></b></label>
+                   
+                </div>
+                <div class="content">
+                    <label style="display: block; "><b>Position: <%= row.position%></b></label>
+                   
+                </div>
+                <div class="content">
+                    <label style="display: block; "><b>Place: <%=row.place%></b></label>
+                   
+                </div>
+            </form>
+                <div>
+                <form action="/editemploye" method="get" style="display: inline;">
+                    <input type="hidden" name="id" value="<%= row.id%>">
+                    <button type="submit" class="edit">Edit</button>
+                    </form>
+                    <form action="/deleteemploye" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="<%= row.id %>">
+                        <button type="submit" class="delete">Delete</button>
+                    </form>
+                </div>
+        </div>
+    </section>
+</body>
+</html>
