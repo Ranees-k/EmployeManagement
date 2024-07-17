@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/addemployenew.css">
+</head>
+<body class="<%= darkMode ? 'body-night' : 'body' %>">
+    <section class="container">
+        <header class="form-header">
+            <h2>Register New Employee</h2>
+        </header>
+        <form class="form" action="/addemploye" method="post">
+            <div class="content">
+                <label for="name"><b>Name</b></label>
+                <input type="text" id="name" name="name" class="textbox" required>
+            </div>
+            <div class="content">
+                <label for="phone"><b>Phone</b></label>
+                <input type="tel" id="phone" name="phone" class="textbox" required>
+            </div>
+            <div class="content">
+                <label for="position"><b>Position</b></label>
+                <input type="text" id="position" name="position" class="textbox" required>
+            </div>
+            <div class="content">
+                <label for="place"><b>Place</b></label>
+                <input type="text" id="place" name="place" class="textbox" required>
+            </div>
+            <button type="submit" class="submit-btn">Add</button>
+        </form>
+    </section>
+    <script>
+        // Check localStorage on page load
+        if (localStorage.getItem('darkMode') === 'true') {
+          document.body.classList.add('body-night');
+        }
+    </script>
+
+</body>
+</html>
