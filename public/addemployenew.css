@@ -1,0 +1,122 @@
+.body {
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.body-night {
+        min-height: 100vh;
+        background-color: #0a0a0b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+.container {
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #4CAF50;
+  
+    text-transform: uppercase;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.content label {
+    display:block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #4CAF50;
+    
+}
+
+.textbox {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #b2dfdb;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+.textbox:focus {
+    outline: none;
+    border-color: #2e7d32;
+    background-color: #fff;
+}
+
+.submit-btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1b5e20;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.edit, .delete {
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+.delete {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+
+
+
+
