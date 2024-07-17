@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="/addemployenew.css">
+</head>
+
+<body class="body">
+    <section class="container">
+        <div class="div1" style="padding: 0px;">
+            <form class="form" action="/editemploye" method="post" >
+                <input type="hidden" name="id" value="<%= row.id %>">
+                <div class="content">
+                    <label style="display: block; text-align: left; "><strong><h2><b>Id: <%= row.id %></b></h2></strong></label>
+                </div>
+                <div class="content">
+                    <label style="display: block; "><b>Name</b></label>
+                    <input type="text" id="input1" name="name" class="textbox" value="<%= row.name %>">
+                </div>
+                <div class="content">
+                    <label style="display: block; "><b>Phone</b></label>
+                    <input type="tel" id="input1" name="phone" class="textbox" value="<%= row.phone %>">
+                </div>
+                <div class="content">
+                    <label style="display: block; "><b>Position</b></label>
+                    <input type="text" id="input2" name="position" class="textbox" value="<%= row.position %>">
+                </div>
+                <div class="content">
+                    <label style="display: block; "><b>Place</b></label>
+                    <input type="text" id="input1" name="place" class="textbox" value="<%= row.place %>">
+                </div>
+                <button type="submit" class="submit-btn">Save</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
