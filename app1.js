@@ -97,6 +97,7 @@ app.post('/addemploye', (req, res) => {
 app.get('/searchemploye', (req, res) => {
   const { id} = req.query;
   
+  
 
     // Query by id
     if(isNaN(id)== false){
